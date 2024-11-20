@@ -1,10 +1,6 @@
-package Taller6.Ejercicio3;
+/ SE TIENE PRIMERO QUE TODO LA CLASE BANCO CON LA PROPIEDAD SALDO COMO PROTECTED
 
-
-
-// SE TIENE PRIMERO QUE TODO LA CLASE BANCO CON LA PROPIEDAD SALDO COMO PROTECTED
-
-/* 
+/
 public class Banco {
     protected double saldo;
 
@@ -17,7 +13,7 @@ public class Banco {
     public void mostrarSaldo() {
         System.out.println("Saldo: " + saldo);
     }
-}*/
+}
 
 /*Utilizar el modificador protected para la propiedad saldo en una clase bancaria es super 
  inseguro por que cualquier subclase o clase del mismo paquete puede acceder directamente 
@@ -25,7 +21,7 @@ al atributo saldo y modificarlo. Esto significa que se puede cambiar el saldo si
  restricciones o validaciones */
 
 
- /*
+ 
  //Por ejemplo, en esta clase se podria acceder al valor del saldo e incluso cambiarlo
  
  public class CuentaCorriente extends Banco {
@@ -39,7 +35,11 @@ al atributo saldo y modificarlo. Esto significa que se puede cambiar el saldo si
     }
 }
  */
-/*TODO: UNA SOLUCION SERIA LA SIGUIENTE, LOS DATOS ESTAN MUCHO MAS PROTEGIDOS  */
+
+
+
+/ UNA SOLUCION SERIA LA SIGUIENTE, LOS DATOS ESTAN MUCHO MAS PROTEGIDOS  */
+
  public class Banco {
     private double saldo;
 
